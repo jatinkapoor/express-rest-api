@@ -1,0 +1,44 @@
+{
+  "name": "express-rest-api",
+  "version": "1.0.0",
+  "description": "Rest api with express",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "lint": "eslint app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jatinkapoor/express-rest-api.git"
+  },
+  "author": "jatinkapoor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jatinkapoor/express-rest-api/issues"
+  },
+  "homepage": "https://github.com/jatinkapoor/express-rest-api#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
